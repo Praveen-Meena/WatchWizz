@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="./movie.css" />
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="mainHeading">
+        <h1>Watch<span style="color: red;">Wiz</span><span style="font-size: 1rem;">.com</span></h1>
+      </div>
+
+      <div id="container">
+        <div id="searchBar">
+          <div class="input-container">
+            <input type="text" name="text" id="userInput" placeholder="Search here"/>
+            <div id="searchBtn">
+                <lord-icon
+                src="https://cdn.lordicon.com/kkvxgpti.json"
+                trigger="click"
+                style="width:24px;height:24px">
+            </lord-icon>            </div>
+          </div>
+          <!-- <button id="searchBtn" class="material-symbols-outlined">Search</button> -->
+        </div>
+
+        <div id="filterContainer">
+          <span id="showAll" class="active">All</span>
+          <span id="showMovies">movie</span>
+          <span id="showSeries">series</span>
+        </div>
+
+        <div id="movieCards">
+          <!-- <div class="movie">
+                    <div class="movieImageContainer">
+                        <img class="movieImage" src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg">
+                    </div>
+                    <div class="movieTitle">
+                        The Lord of the Rings: The Return of the King
+                    </div>
+                    <div class="movieYear">
+                        2003
+                    </div>
+                    <div class="movieType">
+                        movie
+                    </div>
+                </div> -->
+        </div>
+
+        <div id="cardContainer"></div>
+
+        <div class="pageContainer">
+          <button id="previous" class="changePage">Previous</button>
+          <span id="pageNo" class="page"></span>
+          <button id="next" class="changePage">Next</button>
+        </div>
+
+        <!-- <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="./movie.js"></script>
+  </body>
+</html>
